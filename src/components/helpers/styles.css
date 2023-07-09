@@ -1,0 +1,83 @@
+path {
+  position: relative;
+  z-index: -15;
+}
+
+.darker {
+  fill: rgb(0, 8, 61);
+}
+.lighter {
+  fill: rgb(50, 20, 215);
+}
+
+.piece {
+  position: relative;
+  z-index: 15;
+}
+
+#map-of-tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 320px;
+  height: 320px;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.tile {
+  z-index: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tile:hover {
+  transition: background-color 0.45s ease;
+  filter: brightness(1.2);
+  /* opacity: 0.5; */
+}
+
+.tile svg {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: -20;
+}
+
+.lighter-tile {
+  background-color: rgb(255, 255, 255);
+}
+.darker-tile {
+  background-color: rgb(0, 0, 0);
+}
+
+#whos-turn-display {
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+hr {
+  margin: 2px;
+}
+
+.dragging-over-tile {
+  transition: background-color 0.45s ease;
+  filter: brightness(1.2);
+}
+
+p {
+  font-size: small;
+
+  text-align: center;
+  margin: 0.5em 0;
+}
