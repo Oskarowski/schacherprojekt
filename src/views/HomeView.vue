@@ -20,7 +20,7 @@
 
 <style>
 body {
-  background: linear-gradient(to right, #ff8a00, #da1b60);
+  background: linear-gradient(to right, #000000, #00000079);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,7 +46,7 @@ a:hover {
   transition: 0.8s;
   position: relative;
   overflow: hidden;
-  width: 10em;
+  width: 15em;
   cursor: pointer;
 
   display: inline-block;
@@ -54,7 +54,7 @@ a:hover {
   margin: 2px 5px;
   background-color: #333;
   color: #fff;
-  font-size: 16px;
+  font-size: 1em;
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
@@ -76,12 +76,13 @@ a:hover {
 
 <style scoped>
 h1 {
-  font-size: 40px;
+  font-size: 8vw;
+  font-style: oblique;
   font-weight: bold;
   margin: 5px;
 }
 h2 {
-  font-size: 30px;
+  font-size: 7vw;
   font-weight: bold;
   margin: 5px;
 }
