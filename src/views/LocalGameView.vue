@@ -1,13 +1,13 @@
 <template>
   <main>
-    <div class="about local-game">
+    <div class="local-game">
       <h1>Local Game</h1>
       <hr />
       <p id="whos-turn-display"></p>
       <hr />
       <div ref="mapOfTiles" id="map-of-tiles"></div>
       <hr />
-      <a href="/"><button class="menu-button">MENU</button></a>
+      <GoToBtnComponent textToDisplay="Home"></GoToBtnComponent>
     </div>
   </main>
 </template>
@@ -16,7 +16,13 @@
 import * as helpers from '../components/helpers/helpers.js' //helpers/helpers.js
 import { generateWholeBoard } from '../components/helpers/generateBoard.js'
 import { addDragListenersToPieces } from '../components/helpers/logicOfDragging.js'
+import GoToBtnComponent from '@/components/GoToBtnComponent.vue'
+
 export default {
+  components: {
+    GoToBtnComponent
+  },
+
   mounted() {
     var trackingWhosTurn = 'white'
 
@@ -29,7 +35,7 @@ export default {
 </script>
 
 <style>
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
     display: flex;
@@ -37,7 +43,7 @@ export default {
     justify-content: center;
     align-items: center;
   }
-}
+} */
 
 .local-game {
   font-feature-settings: 'smcp', 'zero';
@@ -125,14 +131,9 @@ hr {
 }
 
 p {
-
   font-size: large;
 
   text-align: center;
   margin: 0.5em 0;
 }
 </style>
-
-//TODO - add ending game logic 
-//TODO - add check mate
-//TODO - add mobile possibility to play via dragging or clicking

@@ -12,12 +12,21 @@
         <div>♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙</div>
         <div>♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖</div>
       </div>
-      <a href="/">
-        <button class="menu-button">Go Back</button>
-      </a>
+
+      <GoToBtnComponent textToDisplay="Go Back"></GoToBtnComponent>
     </div>
   </main>
 </template>
+
+<script>
+import GoToBtnComponent from '../components/GoToBtnComponent.vue'
+
+export default {
+  components: {
+    GoToBtnComponent
+  }
+}
+</script>
 
 <style>
 @media (min-width: 1024px) {
